@@ -2,15 +2,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { GreetingComponent } from './greeting/greeting.component';
+import { GreetingModule } from './greeting/greeting.module';
 
 @NgModule({
   declarations: [
     AppComponent,
-    GreetingComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    GreetingModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
